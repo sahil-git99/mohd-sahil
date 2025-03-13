@@ -1,0 +1,127 @@
+{
+  "name": "Mohd Sahil",
+  "label": "Data Scientist",
+  "image_path": "portfolio_media/profile.jpeg",
+  "contact": {
+    "email": "sahil.md.work@gmail.com",
+    "phone": "+91-8130707399",
+    "location": "New Delhi, India"
+  },
+  "summary": "Innovative Data Scientist with a robust background in developing scalable AI and machine learning solutions. Experienced in building data pipelines, implementing advanced RAG systems, and deploying computer vision models for real-time analytics.",
+  "url": "http://www.linkedin.com/in/mohd-sahil-profile",
+  "social_links": [
+    {
+      "label": "LinkedIn",
+      "url": "http://www.linkedin.com/in/mohd-sahil-profile",
+      "svg_path": "img/linkedin.svg"
+    },
+    {
+      "label": "Github",
+      "url": "http://github.com/sahil-git99",
+      "svg_path": "img/github.svg"
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Aidetic Software",
+      "position": "Data Scientist",
+      "url": "",
+      "start_date": "May 2022",
+      "end_date": "March 2023",
+      "summary": "",
+      "highlights": [
+        "Built a data pipeline with Selenium and Scrapy optimized for large-scale scraping using concurrency and multi-threading.",
+        "Designed a fast and efficient vector search system using OCR, FAISS, and Transformer-based models.",
+        "Architected an end-to-end solution for Intelligent Video Analytics using NVIDIA Jetson Device.",
+        "Developed an accurate age and gender detection model using CNN.",
+        "Utilized OpenCV for various computer vision applications including image processing and face detection."
+      ]
+    },
+    {
+      "company": "Rinventix Technologies",
+      "position": "Data Scientist",
+      "url": "",
+      "start_date": "Oct 2023",
+      "end_date": "Present",
+      "summary": "",
+      "highlights": [
+        "Developed AI Agents for conversational systems and task automation in chatbots, voice assistants, and telephony systems.",
+        "Designed advanced RAG solutions incorporating Query Expansion, HyDE, Hybrid Search, and Reranker techniques.",
+        "Developed AI Voice Assistants with an end-to-end flow for STT, TTS, and VAD integrated with LiveKit.",
+        "Built recommendation systems for e-commerce and file organization platforms using machine learning algorithms."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Image Search Engine for Fashion Products",
+      "summary": "Built an Image Search Engine using the ResNet50 architecture to enable seamless and accurate visual search functionality. Managed large image datasets with data augmentation techniques.",
+      "url": "",
+      "highlights": [
+        "Implemented ResNet50 for visual search.",
+        "Enhanced model robustness with data augmentation."
+      ],
+      "images": []
+    },
+    {
+      "title": "Email/SMS Spam Classification",
+      "summary": "Developed an interactive Streamlit app to efficiently identify and filter spam messages. Implemented a Naive Bayes algorithm achieving high accuracy in spam detection.",
+      "url": "",
+      "highlights": [
+        "Built a Streamlit app for spam classification.",
+        "Optimized a Naive Bayes algorithm for reliable performance."
+      ],
+      "images": []
+    },
+    {
+      "title": "A/B Testing over Email Marketing Data",
+      "summary": "Conducted A/B tests on email campaigns to optimize open rates, click-through rates, and conversions. Applied statistical methods to derive actionable insights.",
+      "url": "",
+      "highlights": [
+        "Optimized email marketing metrics through A/B testing.",
+        "Utilized hypothesis testing and t-tests for data-driven decisions."
+      ],
+      "images": []
+    }
+  ],
+  "volunteer_experience": [],
+  "education": [
+    {
+      "institution": "Galgotias College",
+      "location": "",
+      "url": "",
+      "degrees": [
+        "Bachelor of Technology in Computer Science"
+      ],
+      "honors": [],
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": "2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "GenAI (LLM, Foundational Models, AI Agents, RAG, Vector Database, Prompt Engineering, Chatbots, AI Assistant, Knowledge Graph, Langchain, Llama Index, Hugging Face)",
+      "proficiency": 85,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "Data Science (NLP, Computer Vision, Machine Learning, Deep Learning, Tensorflow, Pytorch, Scikit-learn, OpenCV)",
+      "proficiency": 90,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "Dev (Python, Django, Flask, DBMS, MySQL, PostgreSQL, Elastic Search, Git, Docker)",
+      "proficiency": 80,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "Web Scraping (Scrapy, Selenium)",
+      "proficiency": 75,
+      "proficiency_label": "Intermediate"
+    }
+  ],
+  "interests": [],
+  "languages": [],
+  "references": []
+}
