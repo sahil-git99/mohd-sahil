@@ -101,22 +101,22 @@
   ],
   "skills": [
     {
-      "name": "GenAI (LLM, Foundational Models, AI Agents, RAG, Vector Database, Prompt Engineering, Chatbots, AI Assistant, Knowledge Graph, Langchain, Llama Index, Hugging Face)",
+      "name": "GenAI: LLM, Foundational Models, AI Agents, RAG, Vector Database, Prompt Engineering, Chatbots, AI Assistant, Knowledge Graph, Langchain, Llama Index, Hugging Face",
       "proficiency": 85,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "Data Science (NLP, Computer Vision, Machine Learning, Deep Learning, Tensorflow, Pytorch, Scikit-learn, OpenCV)",
+      "name": "Data Science: NLP, Computer Vision, Machine Learning, Deep Learning, Tensorflow, Pytorch, Scikit-learn, OpenCV",
       "proficiency": 90,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "Dev (Python, Django, Flask, DBMS, MySQL, PostgreSQL, Elastic Search, Git, Docker)",
+      "name": "Dev: Python, Django, Flask, DBMS, MySQL, PostgreSQL, Elastic Search, Git, Docker",
       "proficiency": 80,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "Web Scraping (Scrapy, Selenium)",
+      "name": "Miscellaneous: Web Scraping, Scrapy, Selenium, Pandas, Numpy, Data Visualization, Matplotlib, Seaborn, Streamlit",
       "proficiency": 75,
       "proficiency_label": "Intermediate"
     }
