@@ -471,3 +471,54 @@ blockquote {
     print-color-adjust: exact !important;
   }
 }
+
+/* my css - */
+
+/* Education */
+.education-item {
+  margin-bottom: 1.5rem;
+  padding-left: 0.6rem; /* Reduced from 1.5rem */
+}
+
+.institution {
+  font-weight: 500;
+  color: #555;
+}
+
+.education-dates {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Tech Stack */
+.skills-list {
+  margin-top: 1rem;
+  padding-left: 0.6rem; /* Reduced from 1.5rem */
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category h3 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Optional: Section Spacing */
+aside section {
+  margin-bottom: 2rem;
+}
+
+aside h2.section-heading {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #222;
+}
