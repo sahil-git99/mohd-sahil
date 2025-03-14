@@ -477,7 +477,7 @@ blockquote {
 /* Education */
 .education-item {
   margin-bottom: 1.5rem;
-  padding-left: 0.6rem; /* Reduced from 1.5rem */
+  padding-left: 0.72rem; /* Reduced from 1.5rem */
 }
 
 .institution {
@@ -493,7 +493,7 @@ blockquote {
 /* Tech Stack */
 .skills-list {
   margin-top: 1rem;
-  padding-left: 0.6rem; /* Reduced from 1.5rem */
+  padding-left: 0.72rem; /* Reduced from 1.5rem */
 }
 
 .skill-category {
