@@ -23,6 +23,20 @@
   ],
   "work_experience": [
     {
+      "company": "Rinventix Technologies",
+      "position": "Data Scientist",
+      "url": "",
+      "start_date": "Oct 2023",
+      "end_date": "Present",
+      "summary": "",
+      "highlights": [
+        "Developed AI Agents for conversational systems and task automation in chatbots, voice assistants, and telephony systems.",
+        "Designed advanced RAG solutions incorporating Query Expansion, HyDE, Hybrid Search, and Reranker techniques.",
+        "Developed AI Voice Assistants with an end-to-end flow for STT, TTS, and VAD integrated with LiveKit.",
+        "Built recommendation systems for e-commerce and file organization platforms using machine learning algorithms."
+      ]
+    },
+    {
       "company": "Aidetic Software",
       "position": "Data Scientist",
       "url": "",
@@ -35,20 +49,6 @@
         "Architected an end-to-end solution for Intelligent Video Analytics using NVIDIA Jetson Device.",
         "Developed an accurate age and gender detection model using CNN.",
         "Utilized OpenCV for various computer vision applications including image processing and face detection."
-      ]
-    },
-    {
-      "company": "Rinventix Technologies",
-      "position": "Data Scientist",
-      "url": "",
-      "start_date": "Oct 2023",
-      "end_date": "Present",
-      "summary": "",
-      "highlights": [
-        "Developed AI Agents for conversational systems and task automation in chatbots, voice assistants, and telephony systems.",
-        "Designed advanced RAG solutions incorporating Query Expansion, HyDE, Hybrid Search, and Reranker techniques.",
-        "Developed AI Voice Assistants with an end-to-end flow for STT, TTS, and VAD integrated with LiveKit.",
-        "Built recommendation systems for e-commerce and file organization platforms using machine learning algorithms."
       ]
     }
   ],
@@ -96,6 +96,7 @@
       "honors": [],
       "gpa_cumulative": "",
       "gpa_major": "",
+      "start_date": "2016",
       "graduation_date": "2020"
     }
   ],

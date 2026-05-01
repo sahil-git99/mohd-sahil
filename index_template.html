@@ -86,7 +86,7 @@
               </address>
             {% endif %}
             {% if social_links or resume_pdf %}
-              <ul class="inline-list flex-responsive">
+              <ul class="inline-list flex-responsive header-social-links">
                 {% for link in social_links %}
                   <li>
                     <a href="{{ link.url }}"
@@ -94,7 +94,7 @@
                        aria-label="{{ link.label }}"
                        class="link-with-icon">
                       {% if link.svg_data %}{{ link.svg_data | safe }}{% endif %}
-                      {{ link.label }}
+                      <span class="header-link-label">{{ link.label }}</span>
                     </a>
                   </li>
                 {% endfor %}
@@ -104,7 +104,7 @@
                        download
                        rel="noopener noreferrer"
                        aria-label="Resume"
-                       class="link-with-icon">
+                       class="link-with-icon link-resume">
                       <svg xmlns="http://www.w3.org/2000/svg"
                            width="16"
                            height="16"
@@ -114,7 +114,7 @@
                         <path d="M34 8h7a1 1 0 0 0 0-2h-7a1 1 0 0 0 0 2zM34 13h7a1 1 0 0 0 0-2h-7a1 1 0 0 0 0 2zM50 16H34a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2zM50 21H34a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2zM50 26H34a1 1 0 0 0 0 2h16a1 1 0 0 0 0-2zM50 31H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM50 36H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM50 41H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM50 46H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM50 51H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM50 56H14a1 1 0 0 0 0 2h36a1 1 0 0 0 0-2zM22 19a5 5 0 1 0-5-5 5.006 5.006 0 0 0 5 5zm0-8a3 3 0 1 1-3 3 3 3 0 0 1 3-3z" fill="currentColor"/>
                         <path d="M14 28h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H14a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1zm1.473-2a7.325 7.325 0 0 1 13.054 0zM29 8v15.164a9.325 9.325 0 0 0-14 0V8z" fill="currentColor"/>
                       </svg>
-                      Resume
+                      <span class="header-link-label">Resume</span>
                     </a>
                   </li>
                 {% endif %}
@@ -261,11 +261,11 @@
                       {% for hon in edu.honors %}<li>{{ hon }}</li>{% endfor %}
                     </ul>
                   {% endif %}
-                  {% if edu.gpa_major or edu.gpa_cumulative or edu.graduation_date %}
+                  {% if edu.gpa_major or edu.gpa_cumulative or edu.graduation_date or edu.start_date %}
                     <p class="education-aside-meta">
                       {% if edu.gpa_major %}<span class="block">GPA in Major: {{ edu.gpa_major }}</span>{% endif %}
                       {% if edu.gpa_cumulative %}<span class="block">Cumulative GPA: {{ edu.gpa_cumulative }}</span>{% endif %}
-                      {% if edu.graduation_date %}<span class="block">Graduation: {{ edu.graduation_date }}</span>{% endif %}
+                      {% if edu.start_date and edu.graduation_date %}<span class="block">{{ edu.start_date }} - {{ edu.graduation_date }}</span>{% elif edu.graduation_date %}<span class="block">{{ edu.graduation_date }}</span>{% endif %}
                     </p>
                   {% endif %}
                 </section>
