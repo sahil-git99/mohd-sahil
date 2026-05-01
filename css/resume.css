@@ -15,32 +15,8 @@ section {
   page-break-inside: avoid;
 }
 
-header {
-  padding: 0.5in;
-}
-
-header {
-  padding-bottom: 0.5rem;
-}
-
 .header-info {
   margin-top: 0;
-}
-
-main,
-aside,
-footer {
-  padding: 2rem;
-}
-
-main {
-  padding-left: 0.5in;
-  padding-bottom: 0.5in;
-}
-
-aside {
-  padding-right: 0.5in;
-  padding-bottom: 0.5in;
 }
 
 .page-header,
@@ -48,62 +24,87 @@ aside {
   background: #fff;
 }
 
-.flex-responsive {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+@media (min-width: 48rem), print {
+  header {
+    padding-top: 0.5in;
+    padding-right: 0.5in;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5in;
+  }
 
-aside {
-  border-top: none;
-  border-left: 1px solid #ccc;
-}
+  main,
+  aside,
+  footer {
+    padding: 2rem;
+  }
 
-aside h1 {
-  font-size: 1.4rem;
-}
+  main {
+    padding-left: 0.5in;
+    padding-bottom: 0.5in;
+  }
 
-aside h2 {
-  font-size: 1.1rem;
-}
+  aside {
+    padding-right: 0.5in;
+    padding-bottom: 0.5in;
+  }
 
-aside h3 {
-  font-size: 1rem;
-}
+  .flex-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-aside h4 {
-  font-size: 1rem;
-}
+  aside {
+    border-top: none;
+    border-left: 1px solid #ccc;
+  }
 
-aside h5 {
-  font-size: 1rem;
-}
+  aside h1 {
+    font-size: 1.4rem;
+  }
 
-aside h6 {
-  font-size: 1rem;
-}
+  aside h2 {
+    font-size: 1.1rem;
+  }
 
-.page-content .container {
-  grid-template-columns: 2fr 1fr;
-}
+  aside h3 {
+    font-size: 1rem;
+  }
 
-.header-top {
-  gap: 2rem;
-}
+  aside h4 {
+    font-size: 1rem;
+  }
 
-.page-header ul {
-  margin: 0.5rem 0;
-}
+  aside h5 {
+    font-size: 1rem;
+  }
 
-.inline-list {
-  flex-direction: row;
-  justify-content: center;
-  gap: var(--spacing-inline);
-}
+  aside h6 {
+    font-size: 1rem;
+  }
 
-.inline-list li:not(:last-child)::after {
-  content: "|";
-  margin-left: var(--spacing-inline);
-  color: #ccc;
+  .page-content .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .header-top {
+    gap: 2rem;
+  }
+
+  .page-header ul {
+    margin: 0.5rem 0;
+  }
+
+  .inline-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--spacing-inline);
+  }
+
+  .inline-list li:not(:last-child)::after {
+    content: "|";
+    margin-left: var(--spacing-inline);
+    color: #ccc;
+  }
 }

@@ -18,6 +18,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  overflow-wrap: anywhere;
 }
 
 h1,
@@ -34,13 +35,13 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: clamp(1.15rem, 1rem + 0.75vw, 1.4rem);
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -363,8 +364,8 @@ aside li {
 
 /* Blockquotes */
 blockquote {
-  margin: 1rem 2rem;
-  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
   background-color: var(--blockquote-bg-color);
   border-left: 4px solid var(--blockquote-accent-color);
   font-style: italic;
@@ -372,6 +373,42 @@ blockquote {
   line-height: 1.6;
   border-radius: 0 4px 4px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 47.99rem) {
+  header,
+  main,
+  aside,
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+
+  header {
+    padding-bottom: 0.5rem;
+  }
+
+  .section-heading::before,
+  .section-heading::after {
+    margin: 0 0.5rem;
+  }
+
+  .page-header .inline-list a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0;
+  }
+
+  .skill-bar-label {
+    white-space: normal;
+  }
+
+  aside .skill-category h3 {
+    font-size: 0.95rem;
+  }
 }
 
 @media (min-width: 37.5rem) {
@@ -385,6 +422,11 @@ blockquote {
 }
 
 @media (min-width: 48rem) {
+  blockquote {
+    margin: 1rem 2rem;
+    padding: 1.5rem 2rem;
+  }
+
   aside {
     border-top: none;
     border-left: 1px solid #ccc;
@@ -446,6 +488,10 @@ blockquote {
 
   .inline-list {
     gap: var(--spacing-inline);
+  }
+
+  .skill-bar-label {
+    white-space: nowrap;
   }
 
   .inline-list li:not(:last-child)::after {
