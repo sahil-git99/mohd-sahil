@@ -390,6 +390,10 @@ blockquote {
     padding-bottom: 0.5rem;
   }
 
+  .header-image {
+    max-width: min(12rem, 42vw);
+  }
+
   .section-heading::before,
   .section-heading::after {
     margin: 0 0.5rem;
