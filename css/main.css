@@ -8,6 +8,10 @@
   --blockquote-accent-color: #4a5568;
   --blockquote-text-color: #4a5568;
   --spacing-inline: 0.5rem;
+  --footer-text: #5a5a5a;
+  --footer-text-muted: #8a8a8a;
+  --footer-border: rgba(0, 0, 0, 0.088);
+  --footer-edge: rgba(0, 0, 0, 0.06);
 }
 
 /* Base Styles */
@@ -187,7 +191,39 @@ section {
 }
 
 .page-footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--footer-border);
+  box-shadow: 0 -1px 0 var(--footer-edge);
+  padding-block: 1rem 1.125rem;
+  padding-inline: 2rem;
+  margin-top: 0;
+}
+
+.page-footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0;
+  max-width: 36rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text);
+  font-weight: 400;
+  text-align: center;
+}
+
+.page-footer-sep {
+  display: none;
+  color: var(--footer-text-muted);
+  font-weight: 300;
+  user-select: none;
 }
 
 .section-heading {
@@ -378,12 +414,23 @@ blockquote {
 @media (max-width: 47.99rem) {
   header,
   main,
-  aside,
-  footer {
+  aside {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: max(1rem, env(safe-area-inset-left, 0px));
     padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+
+  .page-footer {
+    padding-top: 0.875rem;
+    padding-bottom: max(0.875rem, env(safe-area-inset-bottom, 0px));
+    padding-left: max(1rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+
+  .page-footer-copy {
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
   }
 
   header {
@@ -507,6 +554,46 @@ blockquote {
   .side-gallery {
     grid-template-columns: 1fr;
   }
+
+  .skills-aside .skill-aside-category {
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+
+  .skills-aside .skill-aside-body {
+    font-size: 0.875rem;
+  }
+
+  .education-aside-institution {
+    font-size: 0.9375rem;
+  }
+
+  .education-aside-list li {
+    font-size: 0.875rem;
+  }
+
+  .education-aside-meta {
+    font-size: 0.8125rem;
+  }
+
+  .page-footer-copy {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.45rem 0.55rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.028em;
+  }
+
+  .page-footer-sep {
+    display: inline;
+  }
+
+  .page-footer {
+    padding-top: 1.125rem;
+    padding-bottom: max(1.375rem, env(safe-area-inset-bottom, 0px));
+  }
 }
 
 @media print {
@@ -571,4 +658,126 @@ aside h2.section-heading {
   margin-bottom: 1rem;
   font-size: 1.25rem;
   color: #222;
+}
+
+/* Skills sidebar (aside) */
+.skills-aside-list {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skills-aside .skill-aside-item {
+  margin-bottom: 0;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.skills-aside .skill-aside-item:first-child {
+  padding-top: 0;
+}
+
+.skills-aside .skill-aside-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.skills-aside .skill-aside-category {
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #252525;
+  margin: 0 0 0.45rem;
+}
+
+.skills-aside .skill-aside-body {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.skills-aside > .section-heading {
+  margin-bottom: 0.625rem;
+}
+
+/* Education sidebar (aside) */
+.education-aside > .section-heading {
+  margin-bottom: 0.625rem;
+}
+
+.education-aside-entry + .education-aside-entry {
+  margin-top: 1.125rem;
+  padding-top: 1.125rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.education-aside-institution {
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #252525;
+  margin: 0 0 0.65rem;
+}
+
+.education-aside-location {
+  font-size: 0.875rem;
+  color: #666;
+  margin: -0.35rem 0 0.85rem;
+  line-height: 1.45;
+}
+
+.education-aside-label {
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #555;
+  margin: 0 0 0.4rem;
+}
+
+.education-aside-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.85rem;
+}
+
+.education-aside-list li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #4a4a4a;
+  margin: 0 0 0.35rem;
+}
+
+.education-aside-list li:last-child {
+  margin-bottom: 0;
+}
+
+.education-aside-meta {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #5c5c5c;
+  margin: 0;
+}
+
+.education-aside-meta .block {
+  display: block;
+  margin: 0.25rem 0 0;
+}
+
+.education-aside-meta .block:first-child {
+  margin-top: 0;
 }
