@@ -1,12 +1,12 @@
 {
   "name": "Mohd Sahil",
-  "label": "Data Scientist",
+  "label": "Data Scientist | AI Engineer",
   "image_path": "portfolio_media/profile.jpeg",
   "contact": {
     "email": "sahil.md.work@gmail.com",
     "location": "New Delhi, India"
   },
-  "summary": "Transforming data into intelligence. Data Scientist with expertise in Natural Language Processing, Deep Learning, Generative AI, and Computer Vision—creating intelligent solutions that solve real-world problems and drive meaningful impact.",
+  "summary": "",
   "url": "http://www.linkedin.com/in/mohd-sahil-profile",
   "resume_pdf": "portfolio_media/sahil_resume.pdf",
   "social_links": [
@@ -29,12 +29,33 @@
       "start_date": "Oct 2023",
       "end_date": "Present",
       "summary": "",
-      "highlights": [
-        "Developed AI Agents for conversational systems and task automation in chatbots, voice assistants, and telephony systems.",
-        "Designed advanced RAG solutions incorporating Query Expansion, HyDE, Hybrid Search, and Reranker techniques.",
-        "Developed AI Voice Assistants with an end-to-end flow for STT, TTS, and VAD integrated with LiveKit.",
-        "Built recommendation systems for e-commerce and file organization platforms using machine learning algorithms."
-      ]
+      "groups": [
+        {
+          "title": "Insurance Document Digitization Platform",
+          "highlights": [
+            "Built an automated digitization pipeline to process 10,000+ commercial insurance policy documents, extracting structured data from unstructured formats including PDFs, spreadsheets, and email attachments.",
+            "Developed a multi-modal extraction engine using LLMs, VLMs, and OCR to interpret unstructured data, complex tabular layouts, and diverse document types.",
+            "Developed an Evals Agent that systematically identified and corrected extraction errors, increasing system accuracy from 80% to 95% as validated by QA teams."
+          ]
+        },
+        {
+          "title": "Real-Time Voice AI & Telephony Platform",
+          "highlights": [
+            "Built an end-to-end voice AI pipeline using LiveKit (WebRTC) and Twilio to enable low-latency, bidirectional conversations between AI agents and users over web and phone (SIP).",
+            "Developed the core audio processing flow, integrating Speech-to-Text (STT), Text-to-Speech (TTS), and Voice Activity Detection (VAD) to handle natural speech interruptions and pauses.",
+            "Automated complex task execution by building AI Agents capable of triggering external API workflows and managing state during live voice interactions."
+          ]
+        },
+        {
+          "title": "Advanced RAG & Information Retrieval System",
+          "highlights": [
+            "Built a RAG pipeline using Hybrid Search (Vector + Keyword) and Reranking to optimize data retrieval from massive datasets of PDFs, Docx and web sources.",
+            "Implemented advanced retrieval techniques such as Query Expansion and HyDE (Hypothetical Document Embeddings) to significantly improve the relevance of context provided to LLMs.",
+            "Created a multi-source data ingestion engine capable of parsing and structuring information from diverse formats (Books, Websites, and structured JSONs) for semantic search."
+          ]
+        }
+      ],
+      "highlights": []
     },
     {
       "company": "Aidetic Software",
@@ -43,43 +64,32 @@
       "start_date": "May 2022",
       "end_date": "March 2023",
       "summary": "",
-      "highlights": [
-        "Built a data pipeline with Selenium and Scrapy optimized for large-scale scraping using concurrency and multi-threading.",
-        "Designed a fast and efficient vector search system using OCR, FAISS, and Transformer-based models.",
-        "Architected an end-to-end solution for Intelligent Video Analytics using NVIDIA Jetson Device.",
-        "Developed an accurate age and gender detection model using CNN.",
-        "Utilized OpenCV for various computer vision applications including image processing and face detection."
-      ]
+      "groups": [
+        {
+          "title": "Content Discovery and Recommendation System",
+          "highlights": [
+            "Built a data scraper using Selenium and Scrapy, and used OCR, Transformer models, and FAISS to create a fast vector search system for discovering and recommending relevant content."
+          ]
+        },
+        {
+          "title": "Intelligent Video Analytics System",
+          "highlights": [
+            "Built a real-time video analysis system on NVIDIA Jetson, setting up the full flow from camera feed to data insights for edge computing.",
+            "Developed age and gender detection models using CNNs and OpenCV, handling everything from face detection to image processing for demographic analysis."
+          ]
+        }
+      ],
+      "highlights": []
     }
   ],
   "projects": [
     {
-      "title": "Image Search Engine for Fashion Products",
-      "summary": "Built an Image Search Engine using the ResNet50 architecture to enable seamless and accurate visual search functionality. Managed large image datasets with data augmentation techniques.",
-      "url": "",
+      "title": "MFReturns.com",
+      "summary": "Full-Stack Financial Tool",
+      "url": "https://mfreturns.com/",
       "highlights": [
-        "Implemented ResNet50 for visual search.",
-        "Enhanced model robustness with data augmentation."
-      ],
-      "images": []
-    },
-    {
-      "title": "Email/SMS Spam Classification",
-      "summary": "Developed an interactive Streamlit app to efficiently identify and filter spam messages. Implemented a Naive Bayes algorithm achieving high accuracy in spam detection.",
-      "url": "",
-      "highlights": [
-        "Built a Streamlit app for spam classification.",
-        "Optimized a Naive Bayes algorithm for reliable performance."
-      ],
-      "images": []
-    },
-    {
-      "title": "A/B Testing over Email Marketing Data",
-      "summary": "Conducted A/B tests on email campaigns to optimize open rates, click-through rates, and conversions. Applied statistical methods to derive actionable insights.",
-      "url": "",
-      "highlights": [
-        "Optimized email marketing metrics through A/B testing.",
-        "Utilized hypothesis testing and t-tests for data-driven decisions."
+        "Built and launched a mutual fund analytics platform (FastAPI, SQL, Next.js) computing SIP, CAGR, and XIRR returns across 3,000+ schemes, backed by a weekly automated NAV data pipeline.",
+        "Deployed and maintained independently on a self-managed VPS with CI/CD automation."
       ],
       "images": []
     }
@@ -102,24 +112,19 @@
   ],
   "skills": [
     {
-      "name": "GenAI: LLM, Foundational Models, AI Agents, RAG, Vector Database, Prompt Engineering, Chatbots, AI Assistant, Knowledge Graph, Langchain, Llama Index, Hugging Face",
+      "name": "GenAI: LLMs, VLMs, Multimodal AI, RAG, AI Agents, Agentic AI, MCP, Vector Databases, Embeddings, Knowledge Graphs, LangChain, LangGraph",
       "proficiency": 85,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "Data Science: NLP, Computer Vision, Machine Learning, Deep Learning, Tensorflow, Pytorch, Scikit-learn, OpenCV",
+      "name": "Data Science: Natural Language Processing, Computer Vision, Machine Learning, Deep Learning, Tensorflow, Pytorch, Scikit-learn, OpenCV, Optical Character Recognition (OCR)",
       "proficiency": 90,
       "proficiency_label": "Advanced"
     },
     {
-      "name": "Dev: Python, Django, Flask, DBMS, MySQL, PostgreSQL, Elastic Search, Git, Docker",
+      "name": "Development & Cloud: Python, Django, Flask, SQL, PostgreSQL, Git, Docker, Microsoft Azure",
       "proficiency": 80,
       "proficiency_label": "Advanced"
-    },
-    {
-      "name": "Miscellaneous: Web Scraping, Scrapy, Selenium, Pandas, Numpy, Data Visualization, Matplotlib, Seaborn, Streamlit",
-      "proficiency": 75,
-      "proficiency_label": "Intermediate"
     }
   ],
   "interests": [],

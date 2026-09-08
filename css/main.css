@@ -261,6 +261,24 @@ aside .section-heading::after {
   margin-bottom: 0.5rem;
 }
 
+.work-group {
+  margin-bottom: 1rem;
+}
+
+.work-group:last-child {
+  margin-bottom: 0;
+}
+
+.work-group-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.15rem;
+}
+
+.work-group ul {
+  margin-top: 0.35rem;
+}
+
 /* Images */
 img {
   max-width: 100%;

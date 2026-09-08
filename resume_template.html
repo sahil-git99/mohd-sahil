@@ -6,7 +6,7 @@
 
     <!-- Site Info -->
     <title>{{ name }} - Resume</title>
-    <meta name="description" content="{{ name }} - {{ summary }}">
+    <meta name="description" content="{{ name }} - {{ summary or label }}">
     <meta name="author" content="{{ name }}">
 
     <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
@@ -103,6 +103,18 @@
                     <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
                   {% endif %}
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
+                  {% if job.groups %}
+                    {% for group in job.groups %}
+                      <section class="work-group">
+                        {% if group.title %}<h4 class="work-group-title">{{ group.title }}</h4>{% endif %}
+                        {% if group.highlights %}
+                          <ul>
+                            {% for highlight in group.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                          </ul>
+                        {% endif %}
+                      </section>
+                    {% endfor %}
+                  {% endif %}
                   {% if job.highlights %}
                     <ul>
                       {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
